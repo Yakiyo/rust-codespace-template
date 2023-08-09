@@ -1,18 +1,21 @@
 {
-	"name": "Codespaces Rust Starter",
+	"name": "Rust template",
 	"customizations": {
         "vscode": {
             "extensions": [
-                "cschleiden.vscode-github-actions",
-                "ms-vsliveshare.vsliveshare",
-                "matklad.rust-analyzer",
-                "serayuzgur.crates",
-                "vadimcn.vscode-lldb"
-            ],
+				"matklad.rust-analyzer",
+				"serayuzgur.crates",
+				"tamasfe.even-better-toml"
+			],
             "settings": {
                 "editor.formatOnSave": true
             }
         }
-    },
-	"dockerFile": "Dockerfile"
+	},
+	"features": {
+		"ghcr.io/devcontainers/features/rust:1": {
+			"version": "latest",
+			"profile": "minimal"
+		}
+	}
 }
